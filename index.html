@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handleliste</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div id="greet"></div>
+        <div class="logo"></div>
+        <div class="heading">
+          <h1>Dagligvarer liste</h1>
+        </div>
+      </header>
+      <main>
+        <div class="card_1">
+          <div id="full-container">
+            <h2>På lager</h2>
+            <input type="text" id="full-input" placeholder="Navn..." />
+            <button id="full-btn"><h3>Legg til</h3></button>
+            <h4><ul id="full-list"></ul></h4>
+          </div>
+        </div>
+        <div class="card_2">
+          <div id="need-container">
+            <h2>Går tomt</h2>
+            <input type="text" id="need-input" placeholder="Navn..." />
+            <button id="need-btn"><h3>Legg til</h3></button>
+            <h4><ul id="need-list"></ul></h4>
+          </div>
+        </div>
+        <div class="card_3">
+          <div id="empty-container">
+            <h2>Må kjøpe</h2>
+            <input type="text" id="empty-input" placeholder="Navn..." />
+            <h3>
+              <input type="number" id="empty-price" placeholder="Pris..." />
+            </h3>
+            <button id="empty-btn"><h3>Legg til</h3></button>
+            <h4><ul id="empty-list"></ul></h4>
+
+            <h2><p id="total-price">totalpris: 0</p></h2>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
